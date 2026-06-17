@@ -1,0 +1,49 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+
+:root {
+  --hextra-font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* Typography Enhancements */
+body {
+  font-family: var(--hextra-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  line-height: 1.65;
+}
+
+/* Heading refinement */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Docs content area spacing */
+.content {
+  font-size: 1.05rem;
+  color: #374151; /* gray-700 */
+}
+
+.dark .content {
+  color: #d1d5db; /* gray-300 */
+}
+
+/* Link styling */
+.content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+/* Sidebar refinement */
+.hextra-sidebar-container {
+  font-size: 0.95rem;
+}
+
+/* Custom primary colors */
+:root {
+  --primary-hue: 210;
+  --primary-saturation: 100%;
+  --primary-lightness: 45%;
+}

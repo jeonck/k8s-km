@@ -1,0 +1,99 @@
+baseURL: https://jeonck.github.io/k8s-km/
+title: Kubernetes 실무 가이드
+theme: hextra
+
+enableRobotsTXT: true
+hasCJKLanguage: true
+
+locale: ko
+defaultContentLanguage: ko
+
+outputs:
+  home: [html, rss]
+  page: [html]
+  section: [html, rss]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
+        enable: true
+  highlight:
+    noClasses: false
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+menu:
+  main:
+    - identifier: docs
+      name: Docs
+      pageRef: /docs
+      weight: 1
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 2
+    - name: Search
+      weight: 80
+      params:
+        type: search
+    - identifier: github
+      name: GitHub
+      weight: 90
+      url: "https://github.com/jeonck/k8s-km"
+      params:
+        icon: github
+
+params:
+  description: 쿠버네티스를 MECE 구조로 정리한 실무형 지식베이스 — 기반 모델, 리소스 도메인, 횡단 관심사, 클러스터 거버넌스까지.
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    width: wide
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: wide
+
+  displayUpdatedDate: true
+  dateFormat: "2006-01-02"
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  math:
+    enable: true
+  mermaid:
+    enable: true
+
+  toc:
+    displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      display: hover
+
+  page:
+    width: normal
+
+  editURL:
+    enable: false
