@@ -15,4 +15,5 @@ weight: 100
 {{< cards >}}
   {{< card link="concept" title="Concept" subtitle="부트스트랩 방식 비교, 버전 스큐 정책, 멀티클러스터 모델" >}}
   {{< card link="hands-on" title="Hands-on" subtitle="kubeadm/Cluster API 실습, 업그레이드 절차, 노드 교체 트러블슈팅" >}}
+  {{< card link="kubelet-cert-rotation" title="kubelet 인증서 자동 갱신" subtitle="rotateCertificates, CSR, RBAC, 노드 동기화 절차" >}}
 {{< /cards >}}
