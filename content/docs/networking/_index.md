@@ -17,4 +17,5 @@ weight: 30
 {{< cards >}}
   {{< card link="concept" title="Concept" subtitle="CNI, Service 타입, DNS, Ingress/Gateway API, 서비스 메시" >}}
   {{< card link="hands-on" title="Hands-on" subtitle="DNS 해석 실패, Service 연결 안 됨, Ingress 디버깅" >}}
+  {{< card link="cilium-ebpf" title="CNI 심화: Cilium과 eBPF" subtitle="iptables vs eBPF, kube-proxy 대체, L7 정책, Hubble 관찰성" >}}
 {{< /cards >}}
