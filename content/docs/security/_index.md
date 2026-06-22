@@ -25,4 +25,5 @@ PodSecurityPolicy(PSP)는 Kubernetes 1.25에서 완전히 제거되었습니다.
 {{< cards >}}
   {{< card link="concept" title="Concept" subtitle="방어 깊이 모델, RBAC/PSA/어드미션 체인의 동작 원리와 선택 기준" >}}
   {{< card link="hands-on" title="Hands-on" subtitle="RBAC 최소권한 설계, Kyverno 정책, Secret 암호화, 권한 상승 트러블슈팅" >}}
+  {{< card link="psa-restricted-migration" title="PSA 심화: Baseline → Restricted 전환" subtitle="레벨별 차단 항목, securityContext 모범답안, 단계적 상향 전략" >}}
 {{< /cards >}}

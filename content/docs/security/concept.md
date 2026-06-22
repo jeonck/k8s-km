@@ -46,6 +46,8 @@ PSA는 네임스페이스 라벨로 `privileged`/`baseline`/`restricted` 세 가
 | baseline | 알려진 권한 상승 차단 (hostNetwork, privileged 컨테이너 금지 등) | 일반 운영 워크로드의 최소 기준 |
 | restricted | non-root 강제, capability 최소화, seccomp 필수 | 외부 입력을 처리하는 워크로드, 멀티테넌트 환경 |
 
+기존 워크로드를 baseline에서 restricted로 실제로 올릴 때 무엇이 막히고 YAML을 어떻게 고쳐야 하는지는 [PSA 심화: Baseline → Restricted 전환](../psa-restricted-migration)에서 절차대로 다룹니다.
+
 ## 정책 강제 — OPA/Gatekeeper vs Kyverno
 
 | | OPA/Gatekeeper | Kyverno |
