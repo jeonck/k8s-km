@@ -60,6 +60,8 @@ PSA는 네임스페이스 라벨로 `privileged`/`baseline`/`restricted` 세 가
 
 **의사결정 기준**: 정책 작성자가 쿠버네티스 YAML에만 익숙하다면 Kyverno, 이미 Rego로 다른 시스템(예: API 게이트웨이) 정책도 관리한다면 Gatekeeper로 통일하는 것이 유지보수 비용을 줄입니다.
 
+Kyverno/Gatekeeper 이전에 쿠버네티스가 이미지 검증을 어떻게 다뤘는지(그리고 지금도 일부 환경에 남아있는 `ImagePolicyWebhook`)는 [어드미션 심화: AdmissionConfiguration·ImagePolicyWebhook](../admission-imagepolicywebhook)에서 다룹니다.
+
 ## 공급망 보안
 
 "이 이미지가 우리가 빌드한 그 이미지인가"를 보장하는 영역입니다. `cosign`으로 이미지에 서명하고, admission 정책(Kyverno `verifyImages` 등)으로 서명되지 않은 이미지의 배포를 거부합니다. SBOM(Software Bill of Materials)은 이미지 내부 패키지 목록이며, 취약점 스캐너가 CVE를 대조하는 기준 데이터가 됩니다. SBOM을 실제로 생성하고 CI/CD에 게이트로 통합하는 절차는 [공급망 보안 심화: bom으로 SBOM 만들기](../sbom-with-bom)에서 다룹니다.
