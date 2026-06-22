@@ -48,6 +48,8 @@ PSA는 네임스페이스 라벨로 `privileged`/`baseline`/`restricted` 세 가
 
 기존 워크로드를 baseline에서 restricted로 실제로 올릴 때 무엇이 막히고 YAML을 어떻게 고쳐야 하는지는 [PSA 심화: Baseline → Restricted 전환](../psa-restricted-migration)에서 절차대로 다룹니다.
 
+`privileged: false`만으로는 컨테이너 *내부*에서의 권한 상승까지 막지 못한다는 점도 자주 놓칩니다. `privileged`와 `allowPrivilegeEscalation`이 정확히 어떤 경계를 막는지는 [privileged vs allowPrivilegeEscalation](../privilege-escalation)에서 다룹니다.
+
 ## 정책 강제 — OPA/Gatekeeper vs Kyverno
 
 | | OPA/Gatekeeper | Kyverno |
